@@ -1,0 +1,12 @@
+; Infinate counter, when Reg 2
+; is count up to 5 this program
+; will print "5" in the out section.
+ldi 0 5
+ldi 1 1
+ldi 2 0
+add 2 2 1
+jcn 2 0 6
+jmp 3
+out 2
+jmp 0
+halt

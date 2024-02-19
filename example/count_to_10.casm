@@ -1,0 +1,12 @@
+; Simple counter in casm
+
+; Write 10 to Reg 0
+ldi 0 10
+; Increase in Reg 1
+inc 1
+; Jump to address 4 if Reg 1 == Reg 0
+jcn 1 0 4
+; Else Jump to address 0
+jmp 0
+; Stop the program
+halt
