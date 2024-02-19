@@ -13,7 +13,7 @@ Run the example:
 
 `python3 emulator.py 100 a.out`
 
-![](https://github.com/Jeremy-JYL/c8/blob/main/src/example.mov)
+https://github.com/Jeremy-JYL/c8/assets/108569568/f18837b6-51ba-4794-94e2-089c9c61bd7e
 
 # Format
 The c8 assembler support comment for example:
