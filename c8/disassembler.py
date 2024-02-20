@@ -17,7 +17,8 @@ def disassembler(bin):
         "00001110": "OR",
         "00001110": "AND",
         "00010000": "HALT",
-        "00010001": "IN"
+        "00010001": "IN",
+        "00010010": "COUT"
     }
     return asm[bin]
 

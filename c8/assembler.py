@@ -20,7 +20,8 @@ def assembler(asm):
         "XOR": "00001110",
         "AND": "00001111",
         "HALT": "00010000",
-        "IN": "00010001"
+        "IN": "00010001",
+        "COUT": "00010010"
     }
     return opcode[asm]
 

@@ -22,6 +22,7 @@
 | AND   | 0000 1111 | AND LOGIC         |
 | HALT  | 0001 0000 | HALT              |
 | IN    | 0001 0001 | INPUT             |
+| COUT  | 0001 0010 | CLEAR OUTPUT      |
 -----------------------------------------
 
 ## Instructions Format
@@ -45,4 +46,5 @@
 | AND     | REG REG REG       |
 | HALT    | N/A               |
 | IN      | REG               |
+| COUT    | N/A               |
 -------------------------------

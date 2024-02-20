@@ -65,4 +65,6 @@ def cpu(opcode, operend, pc, out):
                 write(operend[0], "1")
         case "00010001":
             write(operend[0], input("? "))
+        case "00010010":
+            out = ""
     return pc, out
