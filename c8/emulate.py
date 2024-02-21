@@ -1,6 +1,6 @@
 from c8 import cpu
 from c8 import output
-import time
+import time, sys
 
 def clock(clk):
     if clk == "M":
@@ -26,4 +26,4 @@ def emulate(file, clk):
             break
         except IndexError:
             print("Cannot find HALT")
-            exit(1)
+            sys.exit(1)

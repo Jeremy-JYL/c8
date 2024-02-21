@@ -31,7 +31,7 @@ def list_to_string(lst):
 if len(sys.argv) < 3:
     print("c8 ASM assembler")
     print("assembler [ASM FILE] [OUTPUT FILE]")
-    exit()
+    sys.exit()
 
 try:
     os.remove(sys.argv[2])
@@ -50,6 +50,7 @@ try:
                     f.write(f"{assembler(i.split()[0])} {list_to_string(i.split()[1:])}\n")
 except FileNotFoundError:
     print(f"Can't find the file!")
-    exit(1)
+    sys.exit(1)
 except KeyError:
     print(f"Unknown Instructions!")
+    sys.exit(1)

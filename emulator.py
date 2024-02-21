@@ -6,6 +6,6 @@ if len(sys.argv) < 2:
     print("emulator [CLOCK SPEED] [BIN FILE]")
     print("Clock Speed: 100Hz, Recommand")
     print("Clock Speed: M, Manual")
-    exit()
+    sys.exit()
 else:
     emulate.emulate(sys.argv[2], sys.argv[1])

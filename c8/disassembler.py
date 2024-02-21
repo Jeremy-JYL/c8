@@ -28,7 +28,7 @@ def list_to_string(lst):
 if len(sys.argv) < 3:
     print("c8 BIN disassembler")
     print("disassembler [BIN FILE] [OUTPUT FILE]")
-    exit()
+    sys.exit()
 
 try:
     os.remove(sys.argv[2])
@@ -42,6 +42,7 @@ try:
                 f.write(f"{disassembler(i.split()[0])} {list_to_string(i.split()[1:])} \n")
 except FileNotFoundError:
     print(f"Can't find the file!")
-    exit(1)
+    sys.exit(1)
 except KeyError:
     print(f"Unknown Binary!")
+    sys.exit(1)
